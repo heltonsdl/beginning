@@ -1,0 +1,44 @@
+from time import sleep
+def valor(* num):
+   cont = valor = 0
+   print('\n Analisando os valores passados...')
+   for lucro in num:
+       print(f'{lucro}', flush=True)
+       sleep(0.3)
+       if cont == 0:
+           valor = lucro
+       else:
+           if lucro > valor:
+               valor = lucro
+       cont+= 1
+   print(f' \nO maior valor foi R${valor}')
+   print('\n Analisando os valores passados...')
+   sleep(0.3)
+
+   for lucro in num:
+       print(f'{lucro}', flush=True)
+       sleep(0.3)
+       if cont == 0:
+           valor = lucro
+       else:
+           if lucro < valor:
+               valor = lucro
+       cont += 1
+
+   print(f' \nO menor valor foi R${valor}')
+
+
+
+
+
+
+
+
+
+
+valor (22174.1664, 24537.6698, 26139.6134, 26742.6612, 42889.2258, 46251.174, 11191.4722, 3847.4823, 1373.7838, 2659.7563, 48924.2448, 18419.2614, 35240.1826, 43829.1667, 18235.6852, 4355.0662, 13327.1025, 25681.8318, 1718.1221, 13220.495, 8414.61)
+listvalor = [22174.1664, 24537.6698, 26139.6134, 26742.6612, 42889.2258, 46251.174, 11191.4722, 3847.4823, 1373.7838, 2659.7563, 48924.2448, 18419.2614, 35240.1826, 43829.1667, 18235.6852, 4355.0662, 13327.1025, 25681.8318, 1718.1221, 13220.495, 8414.61]
+total = sum(listvalor)
+media = total / 3
+print(f' A media mensal é de R${media}')
+print('Análisando a média mensal dos ultimos 3 meses,o total de dias foi superior a média foi 0')
